@@ -1,0 +1,468 @@
+{
+	"info": {
+		"name": "PetroCentral",
+		"_postman_id": "065da2d1-9813-61b5-bc49-eb0908f5d967",
+		"description": "API requests for users, posts, and comments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Users",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"testuser2\",\n\t\"password\": \"testPassword2\",\n\t\"firstName\": \"testFirstName\",\n\t\"lastName\": \"testLastName\",\n\t\"email\": \"testuser2@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET User By Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"testuser2\",\n\t\"password\": \"testPassword2\",\n\t\"firstName\": \"testFirstName\",\n\t\"lastName\": \"testLastName\",\n\t\"email\": \"testuser2@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/users/5a431ca1dc6b5439a00cd0b3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"users",
+						"5a431ca1dc6b5439a00cd0b3"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"testuser11\",\n\t\"password\": \"testPassword11\",\n\t\"firstName\": \"testFirstName11\",\n\t\"lastName\": \"testLastName11\",\n\t\"email\": \"testuser11@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"testuser11\",\n\t\"password\": \"testPassword11\",\n\t\"firstName\": \"testFirstName11\",\n\t\"lastName\": \"testLastName11_UPDATED\",\n\t\"email\": \"testuser11@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/users/5a433fb3bc92933a84242259",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"users",
+						"5a433fb3bc92933a84242259"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"testuser10\",\n\t\"password\": \"testPassword10\",\n\t\"firstName\": \"testFirstName10\",\n\t\"lastName\": \"testLastName10_UPDATED\",\n\t\"email\": \"testuser10@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/users/5a433fb3bc92933a84242259",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"users",
+						"5a433fb3bc92933a84242259"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"testuser2\",\n\t\"password\": \"testPassword2\",\n\t\"firstName\": \"testFirstName\",\n\t\"lastName\": \"testLastName\",\n\t\"email\": \"testuser2@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"posts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Post By Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"testuser2\",\n\t\"password\": \"testPassword2\",\n\t\"firstName\": \"testFirstName\",\n\t\"lastName\": \"testLastName\",\n\t\"email\": \"testuser2@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/posts/5a434014bc92933a8424225a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"posts",
+						"5a434014bc92933a8424225a"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": \"testuser4\",\n\t\"title\": \"testTitle\",\n\t\"body\": \"testBody\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"posts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": \"testuser4\",\n\t\"title\": \"testTitle\",\n\t\"body\": \"testBody_UPDATED\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/posts/5a434014bc92933a8424225a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"posts",
+						"5a434014bc92933a8424225a"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": \"1\",\n\t\"title\": \"Post 1\",\n\t\"body\": \"Lorem ipsum et al_EDITED\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/posts/5a434014bc92933a8424225a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"posts",
+						"5a434014bc92933a8424225a"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:27017/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"comments"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Comment By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:27017/comments/5a434036bc92933a8424225b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"comments",
+						"5a434036bc92933a8424225b"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"postId\": \"1234\",\n\t\"name\": \"testuser1\",\n\t\"email\": \"testuser1@gmail.com\",\n\t\"body\": \"testCommentBody\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"comments"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Comment",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"postId\": \"1234\",\n\t\"name\": \"testuser1\",\n\t\"email\": \"testuser1@gmail.com\",\n\t\"body\": \"testCommentBody_UPDATED\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/comments/5a434036bc92933a8424225b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"comments",
+						"5a434036bc92933a8424225b"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"postId\": \"1234\",\n\t\"name\": \"testuser1\",\n\t\"email\": \"testuser1@gmail.com\",\n\t\"body\": \"testCommentBody_UPDATED\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:27017/comments/5a434036bc92933a8424225b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27017",
+					"path": [
+						"comments",
+						"5a434036bc92933a8424225b"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
