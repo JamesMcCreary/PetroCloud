@@ -33,3 +33,11 @@ Unlike Mac/Unix machines, node package manager (npm) is not installed by default
 
 ## Postman Collection
 The Postman API collection for the routes is included in the `PetroCentral.postman_collection` file at the root level.
+
+## Todo List
+1. Add more comprehensive validation on routes
+2. Implement security tokens (JWT using OAuth2)
+3. Add CORS and SSL security
+4. Use passport.js NPM module to implement login/logout functionality
+5. Relate user, post, and comment models via ID's
+6. Implement remaining routes
