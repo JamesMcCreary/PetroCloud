@@ -41,3 +41,6 @@ The Postman API collection for the routes is included in the `PetroCentral.postm
 4. Use passport.js NPM module to implement login/logout functionality
 5. Relate user, post, and comment models via ID's
 6. Implement remaining routes
+
+## Note
+The `node_modules` folder and `config/db.js` file are listed in a `.gitignore` file for brevity and security purposes, respectively. The latter contains the mongoDB URI which includes the database administrator credentials.
