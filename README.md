@@ -44,3 +44,33 @@ The Postman API collection for the routes is included in the `PetroCentral.postm
 
 ## Note
 The `node_modules` folder and `config/db.js` file are listed in a `.gitignore` file for brevity and security purposes, respectively. The latter contains the mongoDB URI which includes the database administrator credentials.
+
+
+## Release Log
+
+Version status
+
+In Development: v1.1.0
+In Testing: v1.0.0
+
+#### v1.2.0 - CORS and SSL:
+
+* Add CORS and SSL security
+
+#### v1.1.0 - MVP Advanced:
+
+* First Priority: Add unit tests to v1.0.0 code
+* Add advanced API endpoints for CRUD operations
+* Configure OAuth (https://auth0.com/) for login/logout functionality and authentication
+* Add advanced validation checks on API calls
+* Relate user, post, and comment models via respective ID's
+* Backup Login/Logout Solution: Configure passport.js (http://passportjs.org/) for login/logout functionality and authentication
+* Configure production environment and documentation
+
+#### v1.0.0 - MVP Basic:
+
+* [COMPLETE] Create initial project
+* [COMPLETE] Create and connect to mongoDB database using Mongoose
+* [COMPLETE] Create API endpoints for basic CRUD operations on users, posts, and comments
+* [COMPLETE] Add basic validation checks on API calls
+* [COMPLETE] Add README document
