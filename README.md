@@ -50,7 +50,7 @@ The `node_modules` folder and `config/db.js` file are listed in a `.gitignore` f
 
 Version status
 
-In Development: v1.1.0
+In Development: v1.1.0  
 In Testing: v1.0.0
 
 #### v1.2.0 - CORS and SSL:
